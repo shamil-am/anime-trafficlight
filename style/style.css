@@ -1,39 +1,100 @@
-.row {
+section.way .row {
   position: relative;
-  height: 200px;
+  height: 100px;
   background-color: gray;
 }
 
-.car {
+section.way .row .car {
+  font-size: 50px;
   position: absolute;
-  height: 100px;
-  width: 200px;
-  background-color: black;
   -webkit-animation-name: move;
           animation-name: move;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+section.way .row .car2 {
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  -webkit-animation-name: move2;
+          animation-name: move2;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 @-webkit-keyframes move {
   0% {
     left: 0;
   }
+  5% {
+    left: 5%;
+  }
+  10% {
+    left: 10%;
+  }
+  15% {
+    left: 15%;
+  }
   20% {
     left: 20%;
   }
+  25% {
+    left: 25%;
+  }
+  30% {
+    left: 30%;
+  }
+  35% {
+    left: 35%;
+  }
   40% {
     left: 40%;
-    opacity: 0;
+  }
+  45% {
+    left: 45%;
+  }
+  50% {
+    left: 50%;
+  }
+  55% {
+    left: 50%;
   }
   60% {
-    left: 60%;
+    left: 50%;
+  }
+  65% {
+    left: 50%;
+  }
+  70% {
+    left: 50%;
+  }
+  75% {
+    left: 50%;
   }
   80% {
-    left: 80%;
+    left: 50%;
+  }
+  85% {
+    left: 50%;
+  }
+  90% {
+    left: 50%;
+  }
+  95% {
+    left: 50%;
+    opacity: 1;
   }
   100% {
-    right: 0%;
+    left: 50%;
+    opacity: 0;
   }
 }
 
@@ -41,21 +102,222 @@
   0% {
     left: 0;
   }
+  5% {
+    left: 5%;
+  }
+  10% {
+    left: 10%;
+  }
+  15% {
+    left: 15%;
+  }
   20% {
     left: 20%;
   }
+  25% {
+    left: 25%;
+  }
+  30% {
+    left: 30%;
+  }
+  35% {
+    left: 35%;
+  }
   40% {
     left: 40%;
+  }
+  45% {
+    left: 45%;
+  }
+  50% {
+    left: 50%;
+  }
+  55% {
+    left: 50%;
+  }
+  60% {
+    left: 50%;
+  }
+  65% {
+    left: 50%;
+  }
+  70% {
+    left: 50%;
+  }
+  75% {
+    left: 50%;
+  }
+  80% {
+    left: 50%;
+  }
+  85% {
+    left: 50%;
+  }
+  90% {
+    left: 50%;
+  }
+  95% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 50%;
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes move2 {
+  0% {
+    left: 50%;
+  }
+  5% {
+    left: 50%;
+  }
+  10% {
+    left: 50%;
+  }
+  15% {
+    left: 50%;
+  }
+  20% {
+    left: 50%;
+  }
+  25% {
+    left: 50%;
+  }
+  30% {
+    left: 50%;
+  }
+  35% {
+    left: 50%;
+  }
+  40% {
+    left: 50%;
+  }
+  45% {
+    left: 50%;
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+  }
+  55% {
+    left: 55%;
   }
   60% {
     left: 60%;
   }
+  65% {
+    left: 65%;
+  }
+  70% {
+    left: 70%;
+  }
+  75% {
+    left: 75%;
+  }
   80% {
     left: 80%;
   }
-  100% {
-    right: 0%;
+  85% {
+    left: 85%;
   }
+  90% {
+    left: 90%;
+  }
+  95% {
+    left: 95%;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    left: 50%;
+  }
+  5% {
+    left: 50%;
+  }
+  10% {
+    left: 50%;
+  }
+  15% {
+    left: 50%;
+  }
+  20% {
+    left: 50%;
+  }
+  25% {
+    left: 50%;
+  }
+  30% {
+    left: 50%;
+  }
+  35% {
+    left: 50%;
+  }
+  40% {
+    left: 50%;
+  }
+  45% {
+    left: 50%;
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+  }
+  55% {
+    left: 55%;
+  }
+  60% {
+    left: 60%;
+  }
+  65% {
+    left: 65%;
+  }
+  70% {
+    left: 70%;
+  }
+  75% {
+    left: 75%;
+  }
+  80% {
+    left: 80%;
+  }
+  85% {
+    left: 85%;
+  }
+  90% {
+    left: 90%;
+  }
+  95% {
+    left: 95%;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+.city .traffic-lights {
+  height: 200px;
+}
+
+.city .traffic-lights .red {
+  background-color: red;
+  height: 50px;
+}
+
+.city .traffic-lights .yellow {
+  background-color: yellow;
+  height: 50px;
+}
+
+.city .traffic-lights .green {
+  background-color: green;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
