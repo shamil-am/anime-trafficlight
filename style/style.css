@@ -1,0 +1,61 @@
+.row {
+  position: relative;
+  height: 200px;
+  background-color: gray;
+}
+
+.car {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  background-color: black;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 20%;
+  }
+  40% {
+    left: 40%;
+    opacity: 0;
+  }
+  60% {
+    left: 60%;
+  }
+  80% {
+    left: 80%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 20%;
+  }
+  40% {
+    left: 40%;
+    opacity: 0;
+  }
+  60% {
+    left: 60%;
+  }
+  80% {
+    left: 80%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

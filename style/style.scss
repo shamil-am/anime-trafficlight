@@ -1,0 +1,35 @@
+.row{
+    position: relative;
+    height: 200px;
+    background-color: gray;
+}
+.car{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+@keyframes move{
+   0%{
+    left:0
+   }
+   20%{
+    left: 20%
+   }
+   40%{
+    left: 40%;
+    opacity: 0;
+   }
+   60%{
+    left:60%
+   }
+   80%{
+    left:80%;
+   }
+   100%{
+    right: 0%;
+   }
+}
