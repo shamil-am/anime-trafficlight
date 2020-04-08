@@ -1,17 +1,20 @@
 section.way{
+    padding-top:200px;
     .row{
         position: relative;
         height: 100px;
         background-color: gray;
         .car{
-            font-size: 50px;
+            color: #10346b;
+            font-size: 60px;
             position: absolute;
             animation-name: move;
             animation-duration: 10s;
             animation-fill-mode: forwards;
         }
         .car2{
-            font-size: 50px;
+            color: #10346b;
+            font-size: 60px;
             position: absolute;
             left: 50%;
             opacity:0;
@@ -19,6 +22,40 @@ section.way{
             animation-duration: 10s;
             animation-fill-mode: forwards;
             animation-delay: 5s;
+        }
+        .ligts{
+            background-color: #000;
+            position: absolute;
+            left: 60%;
+            top:-100px;
+            border-radius: 10px;
+           .red{
+               height: 20px;
+               width:20px;
+               margin: 5px;
+               border-radius: 50%;
+               animation-name: stop;
+               animation-duration: 10s;
+               animation-iteration-count: infinite;
+           }
+           .yellow{
+               height: 20px;
+               width:20px;
+               margin: 5px;
+               border-radius: 50%;
+               animation-name: ready;
+               animation-duration: 10s;
+               animation-iteration-count: infinite;
+           }
+           .green{
+               height: 20px;
+               width:20px;
+               margin: 5px;
+               border-radius: 50%;
+               animation-name: go;
+               animation-duration: 10s; 
+               animation-iteration-count: infinite;
+           }
         }
     }
 }
@@ -160,20 +197,166 @@ section.way{
 }
 
 
-.city{
-    .traffic-lights{
-        height:200px;
-        .red{
-            background-color: red;
-            height: 50px;
-        }
-        .yellow{
-            background-color: yellow;
-            height: 50px;
-        }
-        .green{
-            background-color: green;
-            height: 50px;
-        }
+@keyframes stop{
+    0%{
+        background-color: #ff000080;
+        box-shadow: 0px 0px 0px 0px rgba(255,0,0,1);
+    }
+    10%{
+        background-color: #ff000080;
+        box-shadow: 0px 0px 0px 0px rgba(255,0,0,1);
+    }
+    20%{
+        background-color: #ff000080;
+        box-shadow: 0px 0px 0px 0px rgba(255,0,0,1);
+    }
+    30%{
+        background-color: #ff000080;
+        box-shadow: 0px 0px 0px 0px rgba(255,0,0,1);
+    }
+    40%{
+        background-color: #ff000080;
+        box-shadow: 0px 0px 0px 0px rgba(255,0,0,1);
+    }
+    50%{
+        background-color: #ff000080;
+        box-shadow: 0px 0px 0px 0px rgba(255,0,0,1);
+    }
+    60%{
+        background-color: red;
+        -webkit-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        -moz-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+    }
+    70%{
+        background-color: red;
+        -webkit-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        -moz-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+    }
+    80%{
+        background-color: red;
+        -webkit-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        -moz-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+    }
+    90%{
+        background-color: red;
+        -webkit-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        -moz-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+    }
+    100%{
+        background-color: red;
+        -webkit-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        -moz-box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+        box-shadow: 0px 0px 29px 14px rgba(255,0,0,1);
+    }
+}
+
+
+@keyframes ready{
+    0%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    10%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    20%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    30%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    40%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    50%{
+        background-color: #ffff00;
+        -webkit-box-shadow: 0px 0px 29px 14px rgba(255,255,0,1);
+        -moz-box-shadow: 0px 0px 29px 14px rgba(255,255,0,1);
+        box-shadow: 0px 0px 29px 14px rgba(255,255,0,1);
+    }
+    60%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    70%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    80%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    90%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+    100%{
+        background-color: #ffff0080;
+        box-shadow: 0px 0px 0px 0px rgba(255,255,0,1);
+    }
+}
+
+@keyframes go{
+    0%{
+        background-color: #008d00;
+       -webkit-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       -moz-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+    }
+    10%{
+        background-color: #008d00;
+       -webkit-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       -moz-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+    }
+    20%{
+        background-color: #008d00;
+       -webkit-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       -moz-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+    }
+    30%{
+        background-color: #008d00;
+       -webkit-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       -moz-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+    }
+    40%{
+        background-color: #008d00;
+       -webkit-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       -moz-box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+       box-shadow: 0px 0px 29px 14px rgba(0,141,0,1);
+    }
+    50%{
+        background-color: #00800080;
+        box-shadow: 0px 0px 0px 0px rgba(0,141,0,1);
+    }
+    60%{
+        background-color: #00800080;
+        box-shadow: 0px 0px 0px 0px rgba(0,141,0,1);
+    }
+    70%{
+        background-color: #00800080;
+        box-shadow: 0px 0px 0px 0px rgba(0,141,0,1);
+    }
+    80%{
+        background-color: #00800080;
+        box-shadow: 0px 0px 0px 0px rgba(0,141,0,1);
+    }
+    90%{
+        background-color: #00800080;
+        box-shadow: 0px 0px 0px 0px rgba(0,141,0,1);
+    }
+    100%{  
+        background-color: #00800080;
+        box-shadow: 0px 0px 0px 0px rgba(0,141,0,1);
     }
 }

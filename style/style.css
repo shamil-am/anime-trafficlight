@@ -1,3 +1,7 @@
+section.way {
+  padding-top: 200px;
+}
+
 section.way .row {
   position: relative;
   height: 100px;
@@ -5,7 +9,8 @@ section.way .row {
 }
 
 section.way .row .car {
-  font-size: 50px;
+  color: #10346b;
+  font-size: 60px;
   position: absolute;
   -webkit-animation-name: move;
           animation-name: move;
@@ -16,7 +21,8 @@ section.way .row .car {
 }
 
 section.way .row .car2 {
-  font-size: 50px;
+  color: #10346b;
+  font-size: 60px;
   position: absolute;
   left: 50%;
   opacity: 0;
@@ -28,6 +34,53 @@ section.way .row .car2 {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
+}
+
+section.way .row .ligts {
+  background-color: #000;
+  position: absolute;
+  left: 60%;
+  top: -100px;
+  border-radius: 10px;
+}
+
+section.way .row .ligts .red {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-animation-name: stop;
+          animation-name: stop;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+section.way .row .ligts .yellow {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-animation-name: ready;
+          animation-name: ready;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+section.way .row .ligts .green {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-animation-name: go;
+          animation-name: go;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes move {
@@ -302,22 +355,351 @@ section.way .row .car2 {
   }
 }
 
-.city .traffic-lights {
-  height: 200px;
+@-webkit-keyframes stop {
+  0% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  10% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  20% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  30% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  40% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  50% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  60% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  70% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  80% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  90% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  100% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
 }
 
-.city .traffic-lights .red {
-  background-color: red;
-  height: 50px;
+@keyframes stop {
+  0% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  10% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  20% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  30% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  40% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  50% {
+    background-color: #ff000080;
+    -webkit-box-shadow: 0px 0px 0px 0px red;
+            box-shadow: 0px 0px 0px 0px red;
+  }
+  60% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  70% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  80% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  90% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
+  100% {
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 29px 14px red;
+    box-shadow: 0px 0px 29px 14px red;
+  }
 }
 
-.city .traffic-lights .yellow {
-  background-color: yellow;
-  height: 50px;
+@-webkit-keyframes ready {
+  0% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  10% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  20% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  30% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  40% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  50% {
+    background-color: #ffff00;
+    -webkit-box-shadow: 0px 0px 29px 14px yellow;
+    box-shadow: 0px 0px 29px 14px yellow;
+  }
+  60% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  70% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  80% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  90% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  100% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
 }
 
-.city .traffic-lights .green {
-  background-color: green;
-  height: 50px;
+@keyframes ready {
+  0% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  10% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  20% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  30% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  40% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  50% {
+    background-color: #ffff00;
+    -webkit-box-shadow: 0px 0px 29px 14px yellow;
+    box-shadow: 0px 0px 29px 14px yellow;
+  }
+  60% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  70% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  80% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  90% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+  100% {
+    background-color: #ffff0080;
+    -webkit-box-shadow: 0px 0px 0px 0px yellow;
+            box-shadow: 0px 0px 0px 0px yellow;
+  }
+}
+
+@-webkit-keyframes go {
+  0% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  10% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  20% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  30% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  40% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  50% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  60% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  70% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  80% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  90% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  100% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+}
+
+@keyframes go {
+  0% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  10% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  20% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  30% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  40% {
+    background-color: #008d00;
+    -webkit-box-shadow: 0px 0px 29px 14px #008d00;
+    box-shadow: 0px 0px 29px 14px #008d00;
+  }
+  50% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  60% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  70% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  80% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  90% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
+  100% {
+    background-color: #00800080;
+    -webkit-box-shadow: 0px 0px 0px 0px #008d00;
+            box-shadow: 0px 0px 0px 0px #008d00;
+  }
 }
 /*# sourceMappingURL=style.css.map */
